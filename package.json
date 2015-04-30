@@ -1,6 +1,6 @@
 {
   "name": "turris-test-helpers",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Turris.js test environment helpers",
   "main": "index.es5.js",
   "es6": "index.js",
