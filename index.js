@@ -31,11 +31,15 @@ before(function() {
 beforeEach(function() {
     // create container
     this.container = global.window.document.createElement('div');
+    // append to body to allow non-react libs to be testable too
+    global.document.body.appendChild(this.container);
 });
 
 afterEach(function(done) {
     // clean jsdom
     this.React.unmountComponentAtNode(this.container);
+    // remove from body
+    global.document.body.removeChild(this.container);
     // timeout
     setTimeout(done);
 });
