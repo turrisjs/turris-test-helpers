@@ -19,6 +19,11 @@ Package can be installed using NPM:
 It is recommended to import this file in the beginning of your test, e.g.:  
 `import should from 'turris-test-helpers'`
 
+### Recommended libraries to use along
+
+* [nock](https://github.com/pgte/nock) - if you need http requests mocking
+* [proxyquire](https://github.com/thlorenz/proxyquire) - if you need dependency stubbing
+
 ### License
 
 [MIT](http://opensource.org/licenses/MIT)
